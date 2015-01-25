@@ -16,12 +16,13 @@ ActiveRecord::Schema.define(version: 20150125133257) do
   create_table "products", force: true do |t|
     t.string "name"
     t.string "descritpion"
-    t.string "content"
+    t.string "small_image"
+    t.string "large_image"
   end
 
   create_table "slides", force: true do |t|
     t.string "title"
-    t.string "content"
+    t.string "image"
   end
 
   create_table "users", force: true do |t|

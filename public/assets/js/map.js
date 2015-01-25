@@ -3,15 +3,15 @@ jQuery(document).ready(function(){
 
     map = new GMaps({
         div: '#map',
-        lat: 51.451573,
-        lng: -2.595008,
+        lat: 24.984672,
+        lng: 121.539857,
     });
     map.addMarker({
-        lat: 51.451573,
-        lng: -2.595008,
+        lat: 24.984672,
+        lng: 121.539857,
         title: 'Address',      
         infoWindow: {
-            content: '<h5 class="title">College Green Campus</h5><p><span class="region">Address line goes here</span><br><span class="postal-code">Postcode</span><br><span class="country-name">Country</span></p>'
+            content: '<h5 class="title">今湛</h5><p><span class="region">8F, No.207, Sec.3, Beixin Rd., New Taipei City</span><br><span class="postal-code">231-43</span><br><span class="country-name">Taiwan</span></p>'
         }
         
     });

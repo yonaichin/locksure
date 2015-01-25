@@ -3,7 +3,8 @@ class CreateProducts < ActiveRecord::Migration
     create_table :products do |t|
       t.string :name
       t.string :descritpion
-      t.string :content   
+      t.string :small_image
+      t.string :large_image   
     end
   end
 end

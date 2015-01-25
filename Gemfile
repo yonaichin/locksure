@@ -43,7 +43,8 @@ group :development do
 end
 
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
-
+gem "carrierwave"
+gem "mini_magick"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

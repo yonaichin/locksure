@@ -42,7 +42,7 @@ group :development do
   gem 'spring'
 end
 
-gem 'activeadmin', github: 'activeadmin'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

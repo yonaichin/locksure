@@ -6,6 +6,11 @@
         <div style="float:right; font-size: 80%; position: relative; top:-10px"> <%= link_to "Forgot your password?", new_password_path(resource_name) %></div>
       </div>
       <div class="panel-body" style="padding-top:30px">
+        <% unless resource.errors.empty? %>
+          <div class="alert alert-danger">
+            <%= devise_error_messages! %>
+          </div>
+        <% end %>
         <%= form_for(resource, as: resource_name, url: session_path(resource_name),:html => {class: "form-horizontal"}) do |f| %>
           <div class="input-group", style="margin-bottom: 25px">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>

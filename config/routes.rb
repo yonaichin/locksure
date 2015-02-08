@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root to: 'home#index'
   resources :about, only: [:index]
   resources :products, only: [:index, :show]
-  resources :contact, only: [:index]
+  resources :contact, only: [:index, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

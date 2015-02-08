@@ -45,6 +45,7 @@ end
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem "carrierwave"
 gem "mini_magick"
+gem 'mail_form'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

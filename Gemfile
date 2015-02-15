@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6'
+gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
 
 gem 'sqlite3', group: [:development, :test]
@@ -44,8 +44,7 @@ end
 gem "figaro"
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem "carrierwave"
-gem "mini_magick"
-gem 'mail_form'
+gem "mini_magick", '4.0.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

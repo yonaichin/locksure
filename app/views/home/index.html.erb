@@ -4,18 +4,9 @@
       <div class="content container">
           <div id="promo-slider" class="slider flexslider">
               <ul class="slides">
-                  <li>
-                      <%= image_tag "slides/slide-1.jpg" %>
-                  </li>
-                  <li>
-                      <%= image_tag "slides/slide-2.jpg" %>
-                  </li>
-                  <li>
-                      <%= image_tag "slides/slide-3.jpg" %>
-                  </li>
-                  <li>
-                      <%= image_tag "slides/slide-4.jpg" %>
-                  </li>
+                  <% @slides.each do |slide| %>
+                    <li><%= image_tag slide.image %></li>
+                  <% end %>
               </ul><!--//slides-->
           </div><!--//flexslider-->
       </div><!--//content-->

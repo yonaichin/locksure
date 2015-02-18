@@ -25,7 +25,7 @@
                                 <div class="album-cover">
                                     <a href="gallery-album.html"><img class="img-responsive" src="assets/images/gallery/gallery-thumb-1.jpg" alt="" /></a>
                                     <div class="desc">
-                                        <h4><small><a href="#"><%= category.name %></a></small></h4>
+                                        <h4><small><%=link_to "#{category.name}", product_path(category) %></small></h4>
                                         <p><%= category.description%></p>
                                     </div>
                                 </div>

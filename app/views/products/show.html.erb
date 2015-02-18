@@ -1,10 +1,16 @@
 <div class="wrapper">
   <!-- ******CONTENT****** --> 
   <div class="content container">
-    <% @products.each do |product| %>
-      <div style="margin-bottom:35px">
-        <%= image_tag product.image %>
+    <div class="page-wrapper">
+      <div class="page-content">
+        <div class="row page-row">
+          <% @products.each do |product| %>
+            <div style="margin-bottom:35px" class="text-center">
+              <%= image_tag product.image, class: "img-responsive" %>
+            </div>
+          <% end %>
+        </div>
       </div>
-    <% end %>
+    </div>
   </div>
 </div>

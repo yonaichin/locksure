@@ -22,16 +22,19 @@ ActiveRecord::Schema.define(version: 20150215162730) do
   end
 
   create_table "products", force: true do |t|
-    t.string  "name"
-    t.string  "descritpion"
-    t.string  "small_image"
-    t.string  "large_image"
-    t.integer "category_id"
+    t.string   "name"
+    t.string   "descritpion"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "category_id"
   end
 
   create_table "slides", force: true do |t|
-    t.string "title"
-    t.string "image"
+    t.string   "title"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|

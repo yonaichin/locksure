@@ -1,4 +1,8 @@
 class CategoryUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
-  process :resize_to_fill => [358,198]
+
+  def store_dir
+    'public/uploads/category'
+  end
+  process :resize_to_fill => [358,239]
 end

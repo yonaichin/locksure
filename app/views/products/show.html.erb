@@ -6,7 +6,7 @@
         <div class="row page-row">
           <% @products.each do |product| %>
             <div style="margin-bottom:35px" class="text-center">
-              <%= image_tag product.image, class: "img-responsive" %>
+              <%= image_tag product.image_url, class: "img-responsive" %>
             </div>
           <% end %>
         </div>

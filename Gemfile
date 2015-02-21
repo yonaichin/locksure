@@ -44,6 +44,8 @@ gem "figaro"
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem "carrierwave"
 gem "mini_magick", '4.0.1'
+
+gem 'rails_12factor'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

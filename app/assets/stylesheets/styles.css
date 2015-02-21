@@ -666,7 +666,7 @@ ul.custom-list-style li {
   color: #fff;
 }
 .header .social-icons a .fa {
-  color: rgba(256, 256, 256, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 .header .social-icons a .fa:before {
   font-size: 18px;
@@ -1391,7 +1391,7 @@ ul.custom-list-style li {
   -webkit-opacity: 0.9;
   -moz-opacity: 0.9;
   opacity: 0.9;
-  border: 2px solid rgba(256, 256, 256, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.8);
 }
 .config-panel li.active a {
   border: 2px solid #fff;

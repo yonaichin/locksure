@@ -4,9 +4,9 @@ ruby '2.1.5'
 gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
 
-gem 'sqlite3', group: [:development, :test]
-
-gem 'pg'
+gem 'mysql2', "~> 0.3.20"
+#gem 'sqlite3', group: [:development, :test]
+#gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -33,7 +33,7 @@ gem 'bootstrap-sass'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use unicorn as the app server 
+# Use unicorn as the app server
 gem 'unicorn'
 
 group :development do

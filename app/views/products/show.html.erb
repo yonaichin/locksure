@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <!-- ******CONTENT****** --> 
+  <!-- ******CONTENT****** -->
   <div class="content container">
     <div class="page-wrapper">
       <header class="page-heading clearfix">
@@ -11,24 +11,24 @@
               <a href="/product"><%=link_to "Home", root_path %></a>
               <i class="fa fa-angle-right"></i>
             </li>
-            <li class="current">Product</li>
+            <li class="current"><a href="/products">Product</a></li>
           </ul>
         </div>
       </header>
       <div class="page-content">
           <div class="row page-row">
             <% @products.each do |product| %>
-              <div class="col-md-6 col-sm-6 col-xs-12 text-center">  
+              <div class="col-md-6 col-sm-6 col-xs-12 text-center">
                 <div class="album-cover">
                   <%= image_tag product.image_url, class: "img-responsive" %>
                   <div class="desc">
                     <h4>
-                      <small><%= product.name %></small> 
+                      <small><%= product.name %></small>
                     </h4>
                   </div>
                 </div>
               </div>
-            <% end %> 
+            <% end %>
           </div>
       </div>
     </div>

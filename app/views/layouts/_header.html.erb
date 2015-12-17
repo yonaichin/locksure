@@ -1,17 +1,18 @@
-<!-- ******HEADER****** --> 
-<header class="header">  
+<!-- ******HEADER****** -->
+<header class="header">
     <div class="top-bar">
-       
+
     </div><!--//to-bar-->
     <div class="header-main container">
         <h1 class="logo col-md-4 col-sm-4">
             <%= link_to("LOCKSURE", root_path) %>
-        </h1><!--//logo-->           
+        </h1><!--//logo-->
         <div class="info col-md-8 col-sm-8">
             <div class="contact pull-right">
-                <p class="phone"><i class="fa fa-phone"></i>Call us today +886 2 89131236 #21</p> 
-                <p class="email"><i class="fa fa-envelope"></i><%= mail_to "sandy@locksure.com.tw"%></p>
+                <p class="phone"><i class="fa fa-phone"></i>Call us today +886 2 89131236 #21</p>
+                <p class="email"><i class="fa fa-envelope"></i><a>Show Email</a></p>
             </div><!--//contact-->
         </div><!--//info-->
     </div><!--//header-main-->
 </header><!--//header-->
+  <%= javascript_include_tag 'header' %>

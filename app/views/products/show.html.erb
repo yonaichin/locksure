@@ -4,16 +4,33 @@
     <div class="page-wrapper">
       <header class="page-heading clearfix">
         <h1 class="heading-title pull-left"><%= @categories.name %></h1>
+        <div class="breadcrumbs pull-right">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-label">You are here:</li>
+            <li>
+              <a href="/product"><%=link_to "Home", root_path %></a>
+              <i class="fa fa-angle-right"></i>
+            </li>
+            <li class="current">Product</li>
+          </ul>
+        </div>
       </header>
-        <div class="page-content">
+      <div class="page-content">
           <div class="row page-row">
-              <% @products.each do |product| %>
-              <a class="prettyphoto col-md-3 col-sm-4 col-xs-6">                            
-                <%= image_tag product.image_url, class: "img-responsive" %>
-              </a>
+            <% @products.each do |product| %>
+              <div class="col-md-6 col-sm-6 col-xs-12 text-center">  
+                <div class="album-cover">
+                  <%= image_tag product.image_url, class: "img-responsive" %>
+                  <div class="desc">
+                    <h4>
+                      <small><%= product.name %></small> 
+                    </h4>
+                  </div>
+                </div>
+              </div>
             <% end %> 
           </div>
-        </div>
+      </div>
     </div>
   </div>
 </div>

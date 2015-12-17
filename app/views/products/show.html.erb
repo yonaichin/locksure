@@ -2,15 +2,18 @@
   <!-- ******CONTENT****** --> 
   <div class="content container">
     <div class="page-wrapper">
-      <div class="page-content">
-        <div class="row page-row">
-          <% @products.each do |product| %>
-            <div style="margin-bottom:35px" class="text-center">
-              <%= image_tag product.image_url, class: "img-responsive" %>
-            </div>
-          <% end %>
+      <header class="page-heading clearfix">
+        <h1 class="heading-title pull-left"><%= @categories.name %></h1>
+      </header>
+        <div class="page-content">
+          <div class="row page-row">
+              <% @products.each do |product| %>
+              <a class="prettyphoto col-md-3 col-sm-4 col-xs-6">                            
+                <%= image_tag product.image_url, class: "img-responsive" %>
+              </a>
+            <% end %> 
+          </div>
         </div>
-      </div>
     </div>
   </div>
 </div>

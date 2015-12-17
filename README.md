@@ -1,4 +1,4 @@
-# Locksure 
+# Locksure
 
 ## Environments
 
@@ -13,7 +13,7 @@ mysql
 ```
 ./launch.sh
 ```
-and open browser <http://localhost:8080>
+and open browser <http://localhost:8081>
 
 
 

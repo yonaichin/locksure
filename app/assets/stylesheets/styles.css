@@ -2008,3 +2008,52 @@ ul.custom-list-style li {
     width: 255px;
   }
 }
+
+.wdg {  
+  border:1px solid #c4cbcc;
+  border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  float:left;
+  margin-top: 25px;
+}
+.wdg ul { 
+  list-style:none; 
+  float:left; 
+  width:147px; 
+  margin:0; 
+  border:1px solid #f2f3f3;
+  padding:5px;
+  text-align:center;
+  background-color:#FFF;
+}
+.wdg ul:hover { 
+  -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-box-shadow:3px 5px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 3px 5px 7px rgba(0,0,0,.7);
+    box-shadow:3px 5px 7px rgba(0,0,0,.7);
+  cursor:pointer;
+  background:#d8e9f9;
+}
+.wdg ul li {  
+  border-bottom:1px dashed #cfd2d2;
+  padding:10px 0;
+}
+.wdg ul li:first-child { 
+  color:#FFFFFF;
+  font-size:18px;
+  font-weight:bold;
+  background:#2e818f;
+}
+
+
+
+
+
+
+
+
+
+

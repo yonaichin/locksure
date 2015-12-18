@@ -5,20 +5,24 @@
 		</header>
 		<table class="table table-condensed table-striped">
 			<thead>
-				<tr>
+				<!--tr>
 					<th class="header pjax title_field string_type" rel="tooltip" title data-original-title>Title</th>
 					<th class="header pjax path_field carriewavetype" rel="tooltip" title data-original-title>Path</th>
-				</tr>
+				</tr-->
 			</thead>
 			<tbody>
-				<%= @catelog.each do |catelog| %>
-					<tr class="catelog_row">
-						<td class="title_field string_type"><%= catelog.title %></td>		
-						<td class="path_field carrierwave_type">
-							<%= link_to catelog.path, :target => "_blank" , class: "fa fa-download" %>
-						</td>
-					</tr>
-				<% end %>	
+				<div class="page-content">
+          			<div class="row page-row">
+						<% @catelog.each do |catelog| %>
+							<div class="col-md-2 col-sm-2 col-xs-12 text-center wdg">
+								<ul>
+									<li><h4><%= catelog.title %></h4></li>
+									<li><a href="<%= catelog.path %>"><i class= "fa fa-lg fa-download"></i></a></li>
+								</ul>
+							</div>															
+						<% end %>
+					</div>
+				</div>
 			</tbody>
 		</table>
 

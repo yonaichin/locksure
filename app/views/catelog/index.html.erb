@@ -1,30 +1,24 @@
 <div class="content container">
-	<div class="page-wrapper">
-		<header class="page-heading clearfix">
-			<h1 class="heading-title pull-left">Catelog</h1>
-		</header>
-		<table class="table table-condensed table-striped">
-			<thead>
-				<!--tr>
-					<th class="header pjax title_field string_type" rel="tooltip" title data-original-title>Title</th>
-					<th class="header pjax path_field carriewavetype" rel="tooltip" title data-original-title>Path</th>
-				</tr-->
-			</thead>
-			<tbody>
-				<div class="page-content">
-          			<div class="row page-row">
-						<% @catelog.each do |catelog| %>
-							<div class="col-md-2 col-sm-2 col-xs-12 text-center wdg">
-								<ul>
-									<li><h4><%= catelog.title %></h4></li>
-									<li><a href="<%= catelog.path %>"><i class= "fa fa-lg fa-download"></i></a></li>
-								</ul>
-							</div>															
-						<% end %>
-					</div>
-				</div>
-			</tbody>
-		</table>
+  <div class="page-wrapper">
+    <header class="page-heading clearfix">
+      <h1 class="heading-title pull-left">Catelog</h1>
+    </header>
+    <div class="page-sidebar col-md-1 col-sm-2 affix-top"></div>
+    <div class="content-wrapper col-md-10 col-sm-8">
+      <table class="table table-bordered table-hover">
+        <thead>
+            <th class="header pjax title_field string_type" rel="tooltip" title data-original-title>Item</th>
+        </thead>
+        <tbody>
+        <% @catelog.each do |catelog| %>
+          <tr>
+            <td><%= catelog.title %><a class="right" target="_blank" href="<%= catelog.path %>"><i class= "fa fa-lg fa-download"></i></a></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+    <div class="page-sidebar col-md-1 col-sm-2"></div>
 
-	</div>
+  </div>
 </div>

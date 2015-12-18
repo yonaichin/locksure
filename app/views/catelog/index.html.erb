@@ -1,0 +1,24 @@
+<div class="content container">
+  <div class="page-wrapper">
+    <header class="page-heading clearfix">
+      <h1 class="heading-title pull-left">Catelog</h1>
+    </header>
+    <div class="page-sidebar col-md-1 col-sm-2 affix-top"></div>
+    <div class="content-wrapper col-md-10 col-sm-8">
+      <table class="table table-bordered table-hover">
+        <thead>
+            <th class="header pjax title_field string_type" rel="tooltip" title data-original-title>Item</th>
+        </thead>
+        <tbody>
+        <% @catelog.each do |catelog| %>
+          <tr>
+            <td><%= catelog.title %><a class="right" target="_blank" href="<%= catelog.path %>"><i class= "fa fa-lg fa-download"></i></a></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+    <div class="page-sidebar col-md-1 col-sm-2"></div>
+
+  </div>
+</div>

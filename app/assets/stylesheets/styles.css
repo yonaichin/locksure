@@ -1,4 +1,4 @@
-/*   
+/*
  * Template Name: College Green - Responsive Website Template for Education & Training
  * Version: 1.0
  * Author: 3rd Wave Media
@@ -1988,14 +1988,14 @@ ul.custom-list-style li {
     min-height: 100%;
     margin-bottom: -344px;
     /* equal to footer height */
-  
+
   }
   .wrapper:after {
     content: "";
     display: block;
     height: 344px;
     /* must be the same height as footer */
-  
+
   }
   .footer {
     height: 344px;

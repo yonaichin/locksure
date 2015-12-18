@@ -1,0 +1,26 @@
+<div class="content container">
+	<div class="page-wrapper">
+		<header class="page-heading clearfix">
+			<h1 class="heading-title pull-left">Catelog</h1>
+		</header>
+		<table class="table table-condensed table-striped">
+			<thead>
+				<tr>
+					<th class="header pjax title_field string_type" rel="tooltip" title data-original-title>Title</th>
+					<th class="header pjax path_field carriewavetype" rel="tooltip" title data-original-title>Path</th>
+				</tr>
+			</thead>
+			<tbody>
+				<%= @catelog.each do |catelog| %>
+					<tr class="catelog_row">
+						<td class="title_field string_type"><%= catelog.title %></td>		
+						<td class="path_field carrierwave_type">
+							<%= link_to catelog.path, :target => "_blank" , class: "fa fa-download" %>
+						</td>
+					</tr>
+				<% end %>	
+			</tbody>
+		</table>
+
+	</div>
+</div>

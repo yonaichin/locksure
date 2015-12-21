@@ -3,7 +3,7 @@ class CatalogUploader < CarrierWave::Uploader::Base
   include CarrierWave::MimeTypes
   CarrierWave::SanitizedFile.sanitize_regexp = /[^[:word:]\.\-\+]/
   def store_dir
-    'assets/uploads/catelogs'
+    'assets/uploads/catalogs'
   end
   def extension_white_list
     %w(jpg jpeg  png pdf )

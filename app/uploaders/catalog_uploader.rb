@@ -1,4 +1,4 @@
-class CatelogUploader < CarrierWave::Uploader::Base
+class CatalogUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
   include CarrierWave::MimeTypes
   CarrierWave::SanitizedFile.sanitize_regexp = /[^[:word:]\.\-\+]/

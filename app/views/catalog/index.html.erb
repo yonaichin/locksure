@@ -10,9 +10,9 @@
             <th class="header pjax title_field string_type" rel="tooltip" title data-original-title>Item</th>
         </thead>
         <tbody>
-        <% @catelog.each do |catelog| %>
+        <% @catalog.each do |catalog| %>
           <tr>
-            <td><%= catelog.title %><a class="right" target="_blank" href="<%= catelog.path %>"><i class= "fa fa-lg fa-download"></i></a></td>
+            <td><%= catalog.title %><a class="right" target="_blank" href="<%= catalog.path %>"><i class= "fa fa-lg fa-download"></i></a></td>
           </tr>
         <% end %>
         </tbody>

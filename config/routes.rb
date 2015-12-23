@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :about, only: [:index]
   resources :products, only: [:index, :show]
   resources :contact, only: [:index, :create]
-  resources :manufacturing, only: [:index]
   resources :catalog, only: [:index]
+  get '/facilities/bolt/' => 'facilities#bolt'
+  get '/facilities/nut/' => 'facilities#nut'
+  get '/facilities/stamping/' => 'facilities#stamping'
 end

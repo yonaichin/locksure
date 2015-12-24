@@ -18,12 +18,8 @@
       <div class="page-content">
           <div class="row page-row">
             <% @products.each do |product| %>
-              <div class="col-md-6 col-sm-6 col-xs-12 text-center">
-                <div class="album-cover">
-                  <a href="<%= product.image.url %>" data-toggle="lightbox" data-gallery="multiimages" data-title="<%= product.name%>"><%= image_tag product.image_url, class: "img-responsive" %></a>
-
-
-                </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 ">
+                  <a href="<%= product.image.url %>" data-toggle="lightbox" data-gallery="multiimages" data-title="<%= product.name%>"><%= image_tag product.image_url, class: "img-responsive img-thumbnail" %></a>
               </div>
             <% end %>
           </div>

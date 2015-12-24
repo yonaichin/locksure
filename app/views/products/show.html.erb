@@ -20,12 +20,9 @@
             <% @products.each do |product| %>
               <div class="col-md-6 col-sm-6 col-xs-12 text-center">
                 <div class="album-cover">
-                  <%= image_tag product.image_url, class: "img-responsive" %>
-                  <div class="desc">
-                    <h4>
-                      <%= product.name %>
-                    </h4>
-                  </div>
+                  <a href="<%= product.image.url %>" data-toggle="lightbox" data-gallery="multiimages" data-title="<%= product.name%>"><%= image_tag product.image_url, class: "img-responsive" %></a>
+
+
                 </div>
               </div>
             <% end %>
@@ -34,3 +31,5 @@
     </div>
   </div>
 </div>
+
+<%= javascript_include_tag 'lightbox_bootstraped' %>

@@ -43,9 +43,11 @@ group :development do
   gem 'spring'
 end
 gem "figaro"
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'rails_admin'
 gem "carrierwave"
 gem "mini_magick", '4.0.1'
+gem 'lightbox-bootstrap-rails'
+
 
 gem 'rails_12factor'
 # Use Capistrano for deployment

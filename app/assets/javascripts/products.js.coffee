@@ -1,5 +1,4 @@
 $(document).delegate '*[data-toggle="lightbox"]', 'click', (event) ->
-    event.preventDefault()
-      $(this).ekkoLightbox()
-        return
+  event.preventDefault()
+  $(this).ekkoLightbox()
 

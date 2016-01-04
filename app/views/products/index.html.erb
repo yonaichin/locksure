@@ -1,7 +1,7 @@
 <body class="gallery-page">
     <div class="wrapper">
-    
-        <!-- ******CONTENT****** --> 
+
+        <!-- ******CONTENT****** -->
         <div class="content container">
             <div class="page-wrapper">
                 <header class="page-heading clearfix">
@@ -13,10 +13,10 @@
                             <li class="current">Product</li>
                         </ul>
                     </div><!--//breadcrumbs-->
-                </header> 
-                <div class="page-content">    
+                </header>
+                <div class="page-content">
                     <div class="page-row">
-                        <p></p>    
+                        <p></p>
                         <p class="page-row text-muted"></p>
                     </div>
                     <div class="row page-row">
@@ -25,29 +25,29 @@
                                 <div class="album-cover">
                                     <%= link_to(image_tag("#{category.image_url}", class: "img-responsive"), product_path(category))%>
                                     <div class="desc">
-                                        <h4><small><%=link_to "#{category.name}", product_path(category) %></small></h4>
+                                        <h4><%=link_to "#{category.name}", product_path(category) %></h4>
                                         <p><%= category.description%></p>
                                     </div>
                                 </div>
                             </div>
                         <% end %>
                     </div><!--//page-row-->
-                    
+
                 </div><!--//page-content-->
-            </div><!--//page--> 
+            </div><!--//page-->
         </div><!--//content-->
     </div><!--//wrapper-->
 
-    <!-- Javascript -->          
+    <!-- Javascript -->
     <script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
     <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
     <script type="text/javascript" src="assets/plugins/pretty-photo/js/jquery.prettyPhoto.js"></script>
     <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jflickrfeed/jflickrfeed.min.js"></script> 
-    <script type="text/javascript" src="assets/js/main.js"></script>   
-    
+    <script type="text/javascript" src="assets/plugins/jflickrfeed/jflickrfeed.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
 </body>

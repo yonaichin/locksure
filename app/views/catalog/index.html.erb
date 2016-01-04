@@ -12,7 +12,7 @@
         <tbody>
         <% @catalog.each do |catalog| %>
           <tr>
-            <td><%= catalog.title %><a class="right" target="_blank" href="<%= catalog.path %>"><i class= "fa fa-lg fa-download"></i></a></td>
+            <td><%= catalog.title %><a class="right" target="_blank" download href="<%= catalog.path %>"><i class= "fa fa-lg fa-download"></i></a></td>
           </tr>
         <% end %>
         </tbody>

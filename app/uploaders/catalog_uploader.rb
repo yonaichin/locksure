@@ -9,9 +9,9 @@ class CatalogUploader < CarrierWave::Uploader::Base
     %w(jpg jpeg  png pdf )
   end
 
-  version :path, :if => :is_image? do
-    process :resize_to_fill => [1132,548]
-  end
+  #version :path, :if => :is_image? do
+  #  process :resize_to_fill => [1132,548]
+  #end
   def filename
     "#{model.title}.#{file.extension}" if original_filename.present?
   end

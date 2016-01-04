@@ -1166,7 +1166,7 @@ ul.custom-list-style li {
   opacity: 0.9;
 }
 .page-wrapper .page-content .album-cover .desc {
-  /*padding: 15px;*/
+  padding: 1px;
   position: relative;
 }
 .page-wrapper .page-content .album-cover .desc:before {
@@ -1974,7 +1974,7 @@ ul.custom-list-style li {
     min-height: 100px;
   }
   .page-wrapper .album-cover {
-    min-height: 210px;
+    min-height: 110px;
     /* min-height: 360px; */
   }
   /* Sticky Footer */

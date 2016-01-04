@@ -20,7 +20,7 @@
             <% @products.each do |product| %>
               <div class="col-md-3 col-sm-3 col-xs-6 text-center">
                 <div class="album-cover">
-                  <a href="<%= product.image.url %>" data-toggle="lightbox" data-gallery="multiimages" data-title="<%= product.name%>"><%= image_tag product.image_url, class: "img-responsive img-thumbnail" %></a>
+                  <a href="<%= product.image.url %>" data-toggle="lightbox" data-gallery="multiimages" data-title="<%= product.name%>"><%= image_tag product.image_url, class: "img-responsive" %></a>
                   <div class="desc">
                     <h4>
                       <a href="<%= product.image.url %>" data-toggle="lightbox" data-gallery="multiimages" data-title="<%= product.name%>"><%= product.name %></a>

@@ -6,7 +6,7 @@ class CatalogUploader < CarrierWave::Uploader::Base
     'assets/uploads/catalogs'
   end
   def extension_white_list
-    %w(jpg jpeg  png pdf )
+    %w(jpg jpeg  png pdf rar)
   end
 
   #version :path, :if => :is_image? do

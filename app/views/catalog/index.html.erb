@@ -31,10 +31,10 @@
               <% if catalog.catalogtype == "image"%>
               <div class="col-md-3 col-sm-3 col-xs-6 text-center">
                 <div class="album-cover">
-                  <a href="<%= catalog.path.url %>"><%= image_tag catalog.path_url, class: "img-responsive fixed-img-height" %></a>
+                  <a href="<%= catalog.path.url %>" download><%= image_tag catalog.path_url, class: "img-responsive fixed-img-height" %></a>
                   <div class="desc">
                     <h4>
-                      <a href="<%= catalog.path.url %>"><%= catalog.title %></a><a class="right" target="_blank" download href="<%= catalog.path %>"><i class= "fa fa-lg fa-download"></i></a>
+                      <a href="<%= catalog.path.url %>" download><%= catalog.title %></a>
                     </h4>
                   </div>
                 </div>

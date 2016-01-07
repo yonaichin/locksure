@@ -1,0 +1,51 @@
+<div class="content container">
+    <div class="page-wrapper">
+      <header class="page-heading clearfix">
+        <h1 class="heading-title pull-left">Brochure</h1>
+        <div class="breadcrumbs pull-right">
+          <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-label">You are here:</li>
+              <li><a href="index.html">Home</a><i class="fa fa-angle-right"></i></li>
+              <li><a href="#">Catalog</a><i class="fa fa-angle-right"></i></li>
+              <li class="current">Brochure</li>
+          </ul>
+        </div>
+      </header>
+      <div class="page-content"></div>
+        <div class="row page-row">
+          <aside class="page-sidebar col-md-2 col-sm-4 affix-top">
+            <section class="widget">
+                <ul class="nav">
+                  <li><a href="/catalog/index">Catalog</a></li>
+                  <li class="active"><a href="/catalog/brochure">Brochure</a></li>
+                </ul>
+            </section><!--//widget-->
+          </aside>
+          <div class="content-wrapper col-md-10 col-sm-8">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>
+                    item
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+              <% @catalog.each do |catalog| %>
+                <% if catalog.catalogtype == "file"%>
+                <tr>
+                  <td><%= catalog.title %><a class="right" target="_blank" download href="<%= catalog.path %>"><i class= "fa fa-lg fa-download"></i></a></td>
+                </tr>
+                <% end %>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+

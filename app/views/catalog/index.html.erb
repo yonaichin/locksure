@@ -5,20 +5,48 @@
     </header>
     <div class="page-sidebar col-md-1 col-sm-2 affix-top"></div>
     <div class="content-wrapper col-md-10 col-sm-8">
-      <table class="table table-bordered table-hover">
-        <thead>
-            <th class="header pjax title_field string_type" rel="tooltip" title data-original-title>Item</th>
-        </thead>
-        <tbody>
-        <% @catalog.each do |catalog| %>
-          <tr>
-            <td><%= catalog.title %><a class="right" target="_blank" download href="<%= catalog.path %>"><i class= "fa fa-lg fa-download"></i></a></td>
-          </tr>
-        <% end %>
-        </tbody>
-      </table>
+      <div class="tabbed-info page-row">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="true">File</a></li>
+          <li class=""><a href="#tab2" data-toggle="tab" aria-expanded="flase">Image</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab1">
+            <table class="table table-bordered table-hover">
+              <tbody>
+              <% @catalog.each do |catalog| %>
+                <% if catalog.catalogtype == "file"%>
+                <tr>
+                  <td><%= catalog.title %><a class="right" target="_blank" download href="<%= catalog.path %>"><i class= "fa fa-lg fa-download"></i></a></td>
+                </tr>
+                <% end %>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane" id="tab2">
+            <div class="page-content">
+            <div class="row">
+            <% @catalog.each do |catalog| %>
+              <% if catalog.catalogtype == "image"%>
+              <div class="col-md-3 col-sm-3 col-xs-6 text-center">
+                <div class="album-cover">
+                  <a href="<%= catalog.path.url %>"><%= image_tag catalog.path_url, class: "img-responsive fixed-img-height" %></a>
+                  <div class="desc">
+                    <h4>
+                      <a href="<%= catalog.path.url %>"><%= catalog.title %></a><a class="right" target="_blank" download href="<%= catalog.path %>"><i class= "fa fa-lg fa-download"></i></a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <% end %>
+            <% end %>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="page-sidebar col-md-1 col-sm-2"></div>
-
   </div>
 </div>

@@ -43,7 +43,7 @@ en:
       dashboard:
         title: "站台管理"
         menu: "儀表板"
-        breadcrumb: "儀錶板"
+        breadcrumb: "儀表板"
       index:
         title: "%{model_label_plural}清單"
         menu: "清單"

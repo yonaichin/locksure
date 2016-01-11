@@ -8,7 +8,8 @@ class ProductUploader < CarrierWave::Uploader::Base
     "#{secure_token}.#{file.extension}" if original_filename.present?
 
   end
-  process :resize_to_fill => [1132,548]
+  process :resize_to_fill => [800,600]
+  #process :resize_to_fill => [1132,548]
   protected
   def secure_token
     var = :"@#{mounted_as}_secure_token"

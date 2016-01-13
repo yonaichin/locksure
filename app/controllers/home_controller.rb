@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def index
-    @slides = Slide.all
-    @products = Product.take(8)
+    #@slides = Slide.all
+    @slides = Product.order('RAND()').limit(8)
   end
 end

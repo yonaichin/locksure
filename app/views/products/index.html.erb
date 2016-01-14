@@ -26,7 +26,7 @@
                                     <%= link_to(image_tag("#{category.image_url}", class: "img-responsive"), product_path(category))%>
                                     <div class="desc">
                                         <h4><%=link_to "#{category.name}", product_path(category) %></h4>
-                                        <p><%= category.description%></p>
+                                        <p><%= category.attachment%></p>
                                     </div>
                                 </div>
                             </div>

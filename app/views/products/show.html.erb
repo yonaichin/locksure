@@ -24,8 +24,8 @@
                   <div class="desc">
                     <h4>
                       <a href="<%= product.image.url %>" data-toggle="lightbox" data-gallery="multiimages" data-title="<%= product.name%>"><%= product.name %></a>
-                      <% if product.description != '' %>
-                        <a href="<%= product.description%>"><i class='fa fa-file' style='position:absolute;right:10px;'> </i></a>
+                      <% if product.attachment != '' %>
+                        <a href="<%= product.attachment%>"><i class='fa fa-file' style='position:absolute;right:10px;'> </i></a>
                       <%end%>
                     </h4>
                   </div>

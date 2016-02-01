@@ -2009,3 +2009,9 @@ ul.custom-list-style li {
     width: 255px;
   }
 }
+.watermark{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.05;
+}

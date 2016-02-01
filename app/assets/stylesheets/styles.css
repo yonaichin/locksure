@@ -2009,21 +2009,3 @@ ul.custom-list-style li {
     width: 255px;
   }
 }
-.watermark {
-  display: block;
-  position: relative;
-}
-
-.watermark:after {
-  content: "";
-  background-image: image-url('Strip3.jpg');
-  background-repeat:no-repeat;
-  background-position:center;
-  opacity: 0.1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}

@@ -2,13 +2,33 @@
     <div class="wrapper">
       <!-- ******CONTENT****** -->
       <div class="content container">
-          <div id="promo-slider" class="slider flexslider">
-              <ul class="slides">
-                  <% @slides.each do |slide| %>
-                    <li><%= image_tag slide.image %></li>
-                  <% end %>
-              </ul><!--//slides-->
-          </div><!--//flexslider-->
+          <div class="col-md-6">
+            <section class="video">
+              <div class="section-content">
+                <div id="videos-carousel" class="videos-carousel carousel slide">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <iframe class="video-iframe" src="https://www.youtube.com/embed/7htZkSe-MfY" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                  </div>
+                </div><!--//videos-carousel-->
+                <p class="description">Aenean feugiat a diam tempus sodales. Quisque lorem nulla, ultrices imperdiet malesuada at, suscipit vel lorem. Nulla dignissim nisi ac aliquet semper.</p>
+              </div><!--//section-content-->
+            </section>
+          </div><div class="col-md-6">
+            <section class="video">
+              <div class="section-content">
+                <div id="videos-carousel" class="videos-carousel carousel slide">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/pQRZ8dWAcUg" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                  </div>
+                </div><!--//videos-carousel-->
+                <p class="description">Aenean feugiat a diam tempus sodales. Quisque lorem nulla, ultrices imperdiet malesuada at, suscipit vel lorem. Nulla dignissim nisi ac aliquet semper.</p>
+              </div><!--//section-content-->
+            </section>
+          </div>
           <section class="promo box box-dark">
               <div class="col-md-9">
               <h1 class="section-heading">Why Locksure</h1>
@@ -19,46 +39,14 @@
               </div>
           </section><!--//promo-->
 
-          <div class="col-md-4">
-            <section class="video">
-              <div class="section-content">
-                <div id="videos-carousel" class="videos-carousel carousel slide">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                        <iframe class="video-iframe" src="//www.youtube.com/embed/r9LelXa3U_I?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen=""></iframe>
-                    </div>
-                  </div>
-                </div><!--//videos-carousel-->
-                <p class="description">Aenean feugiat a diam tempus sodales. Quisque lorem nulla, ultrices imperdiet malesuada at, suscipit vel lorem. Nulla dignissim nisi ac aliquet semper.</p>
-              </div><!--//section-content-->
-            </section>
-          </div><div class="col-md-4">
-            <section class="video">
-              <div class="section-content">
-                <div id="videos-carousel" class="videos-carousel carousel slide">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                        <iframe class="video-iframe" src="//www.youtube.com/embed/r9LelXa3U_I?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen=""></iframe>
-                    </div>
-                  </div>
-                </div><!--//videos-carousel-->
-                <p class="description">Aenean feugiat a diam tempus sodales. Quisque lorem nulla, ultrices imperdiet malesuada at, suscipit vel lorem. Nulla dignissim nisi ac aliquet semper.</p>
-              </div><!--//section-content-->
-            </section>
-          </div><div class="col-md-4">
-            <section class="video">
-              <div class="section-content">
-                <div id="videos-carousel" class="videos-carousel carousel slide">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                        <iframe class="video-iframe" src="//www.youtube.com/embed/r9LelXa3U_I?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen=""></iframe>
-                    </div>
-                  </div>
-                </div><!--//videos-carousel-->
-                <p class="description">Aenean feugiat a diam tempus sodales. Quisque lorem nulla, ultrices imperdiet malesuada at, suscipit vel lorem. Nulla dignissim nisi ac aliquet semper.</p>
-              </div><!--//section-content-->
-            </section>
+          <div id="promo-slider" class="slider flexslider">
+              <ul class="slides">
+                  <% @slides.each do |slide| %>
+                    <li><%= image_tag slide.image %></li>
+                  <% end %>
+              </ul><!--//slides-->
           </div>
+
 
       </div><!--//content-->
   </div><!--//wrapper-->

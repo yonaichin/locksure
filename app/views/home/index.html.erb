@@ -1,34 +1,42 @@
 <body class="home-page">
     <div class="wrapper">
       <!-- ******CONTENT****** -->
-      <div class="content container">
-          <div class="col-md-6">
-            <section class="video">
+      <div class="col-md-6">
+          <section class="video">
               <div class="section-content">
-                <div id="videos-carousel" class="videos-carousel carousel slide">
+                <div id="videos-carousel" class="videos-carousel carouse slide">
                   <div class="carousel-inner">
                     <div class="item active">
                       <iframe class="video-iframe" src="https://www.youtube.com/embed/7htZkSe-MfY" frameborder="0" allowfullscreen=""></iframe>
                     </div>
                   </div>
                 </div><!--//videos-carousel-->
-                <p class="description">Aenean feugiat a diam tempus sodales. Quisque lorem nulla, ultrices imperdiet malesuada at, suscipit vel lorem. Nulla dignissim nisi ac aliquet semper.</p>
               </div><!--//section-content-->
-            </section>
-          </div><div class="col-md-6">
+          </section></div>
+          <div class="col-md-6">
             <section class="video">
               <div class="section-content">
                 <div id="videos-carousel" class="videos-carousel carousel slide">
                   <div class="carousel-inner">
-                    <div class="item active">
+                      <div class="item active">
                         <iframe class="video-iframe" src="https://www.youtube.com/embed/pQRZ8dWAcUg" frameborder="0" allowfullscreen=""></iframe>
                     </div>
                   </div>
                 </div><!--//videos-carousel-->
-                <p class="description">Aenean feugiat a diam tempus sodales. Quisque lorem nulla, ultrices imperdiet malesuada at, suscipit vel lorem. Nulla dignissim nisi ac aliquet semper.</p>
               </div><!--//section-content-->
             </section>
           </div>
+
+          <div class="col-md-12">
+            <div id="promo-slider" class="slider flexslider">
+              <ul class="slides">
+                <% @slides.each do |slide| %>
+                  <li><%= image_tag slide.image %></li>
+                <% end %>
+              </ul><!--//slides-->
+            </div>
+          </div>
+
           <section class="promo box box-dark">
               <div class="col-md-9">
               <h1 class="section-heading">Why Locksure</h1>
@@ -38,15 +46,6 @@
                   <%= link_to "Contact Us", contact_index_path, class: "btn btn-cta"%>
               </div>
           </section><!--//promo-->
-
-          <div id="promo-slider" class="slider flexslider">
-              <ul class="slides">
-                  <% @slides.each do |slide| %>
-                    <li><%= image_tag slide.image %></li>
-                  <% end %>
-              </ul><!--//slides-->
-          </div>
-
 
       </div><!--//content-->
   </div><!--//wrapper-->

@@ -46,7 +46,8 @@ gem "figaro"
 gem 'rails_admin'
 gem "carrierwave"
 gem "mini_magick", '4.0.1'
-gem 'lightbox-bootstrap-rails'
+#gem 'lightbox-bootstrap-rails'
+gem 'lightbox2-rails'
 
 
 gem 'rails_12factor'

@@ -2,10 +2,28 @@
     <div class="wrapper">
       <!-- ******CONTENT****** -->
       <div class="content container">
-          <div class="col-md-12">
+          <div class="col-md-4">
             <div id="promo-slider" class="slider flexslider">
               <ul class="slides">
-                <% @slides.each do |slide| %>
+                <% @bolt_img.each do |slide| %>
+                  <li><%= image_tag slide.image %></li>
+                <% end %>
+              </ul><!--//slides-->
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="promo-slider" class="slider flexslider">
+              <ul class="slides">
+                <% @nut_img.each do |slide| %>
+                  <li><%= image_tag slide.image %></li>
+                <% end %>
+              </ul><!--//slides-->
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="promo-slider" class="slider flexslider">
+              <ul class="slides">
+                <% @stamping_img.each do |slide| %>
                   <li><%= image_tag slide.image %></li>
                 <% end %>
               </ul><!--//slides-->

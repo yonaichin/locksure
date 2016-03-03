@@ -2020,3 +2020,28 @@ ul.custom-list-style li {
   margin-top:100px;
   margin-left: -14px;
 }
+p.tel {
+  font-size:18px;
+  font-weight: 500;
+}
+span.region {
+  font-size:18px;
+  font-weight: 500;
+}
+span.street-address {
+  font-size:18px;
+  font-weight: 500;
+}
+p.email > a {
+  font-size:18px;
+  font-weight: 500;
+}
+p.phone  {
+  font-size:18px;
+  font-weight: 500;
+}
+article > p {
+  font-size:17px;
+  line-height:24px;
+  margin-bottom:22px;
+}

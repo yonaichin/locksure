@@ -2045,3 +2045,7 @@ article > p {
   line-height:24px;
   margin-bottom:22px;
 }
+.custom_nav_logo {
+  margin-bottom: -25px;
+  margin-top: -30px;
+}

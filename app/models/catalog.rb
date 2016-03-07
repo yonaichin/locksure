@@ -4,7 +4,7 @@ class Catalog < ActiveRecord::Base
      [['image'],['file']]
   end
 
-  validates :catalogtype, :presence => true
+  validates :name, :path, :catalogtype, :presence => true
   mount_uploader :path, CatalogUploader
 
 end

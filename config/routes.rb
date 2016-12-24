@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get '/catalog/brochure/' => 'catalog#brochure'
   get '/about/introduction/' => 'about#introduction'
   get '/about/companyfocus/' => 'about#companyfocus'
+  get '/about/anti-bribery/' => 'about#antibribery'
 end
